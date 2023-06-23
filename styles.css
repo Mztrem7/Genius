@@ -2,6 +2,9 @@
     margin: 0;
     padding: 0;
 }
+body{
+    background-color: #030351;
+}
 #boxTitle p{
     text-align: center;
 }
@@ -12,46 +15,72 @@
 }
 
 #vermelho{
-    background-color: rgb(210, 17, 17);
+    background-color: rgba(208, 31, 31, 0.579);
     border-start-start-radius: 100%;
     border-end-end-radius: 10px;
     width: 100px;
     height: 100px;
 }
 #vermelho:active{
-    opacity: 0.1;
+    filter: brightness(200);
     transition: 0.5s;
 }
 #verde{
-    background-color: rgb(9, 218, 9);
+    background-color: rgba(20, 186, 20);
     border-start-end-radius: 100%;
     border-end-start-radius: 10px;
     width: 100px;
     height: 100px;
 }
 #verde:active{
-    opacity: 0.3;
+    filter: brightness(200);
     transition: 0.5s;
 }
 #amarelo{
-    background-color: rgb(231, 231, 12);
+    background-color: rgba(200, 200, 20);
     border-end-start-radius: 100%;
     border-start-end-radius: 10px;
     width: 100px;
     height: 100px;
 }
 #amarelo:active{
-    opacity: 0.3;
+    filter: brightness(200);
     transition: 0.5s;
 }
 #azul{
-    background-color: rgb(13, 13, 219);
+    background-color: #0a0ab9;
     border-end-end-radius: 100%;
     border-start-start-radius: 10px;
     width: 100px;
     height: 100px;
 }
 #azul:active{
-    opacity: 0.3;
+    filter: brightness(200);
     transition: 0.5s;
+}
+.btns{
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+
+#jogarMaquina{
+    margin: 40px 20px 0px 0px;
+    width: 100px;
+}
+#verificar{
+    width: 100px;
+    margin-top: 40px;
+}
+button{
+    border: none;
+    background-color: #950650;
+    color: #fff;
+    height: 30px;
+    border-radius: 3px;
+    box-shadow: 5px 7px 60px black;
+}
+button:hover{
+    transition: 0.3s ease-in-out;
+    opacity: 0.4;
 }
