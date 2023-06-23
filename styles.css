@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#boxTitle p{
+    text-align: center;
+}
+#boxGame{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#vermelho{
+    background-color: rgb(210, 17, 17);
+    border-start-start-radius: 100%;
+    border-end-end-radius: 10px;
+    width: 100px;
+    height: 100px;
+}
+#vermelho:active{
+    opacity: 0.1;
+    transition: 0.5s;
+}
+#verde{
+    background-color: rgb(9, 218, 9);
+    border-start-end-radius: 100%;
+    border-end-start-radius: 10px;
+    width: 100px;
+    height: 100px;
+}
+#verde:active{
+    opacity: 0.3;
+    transition: 0.5s;
+}
+#amarelo{
+    background-color: rgb(231, 231, 12);
+    border-end-start-radius: 100%;
+    border-start-end-radius: 10px;
+    width: 100px;
+    height: 100px;
+}
+#amarelo:active{
+    opacity: 0.3;
+    transition: 0.5s;
+}
+#azul{
+    background-color: rgb(13, 13, 219);
+    border-end-end-radius: 100%;
+    border-start-start-radius: 10px;
+    width: 100px;
+    height: 100px;
+}
+#azul:active{
+    opacity: 0.3;
+    transition: 0.5s;
+}
