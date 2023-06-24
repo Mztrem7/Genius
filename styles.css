@@ -1,9 +1,10 @@
+
 *{
     margin: 0;
     padding: 0;
 }
 body{
-    background-color: #030351;
+    background-color: #131313;
 }
 #boxTitle p{
     text-align: center;
@@ -15,7 +16,8 @@ body{
 }
 
 #vermelho{
-    background-color: rgba(208, 31, 31, 0.579);
+    background-color: #d01f1f;
+    opacity: 0.5;
     border-start-start-radius: 100%;
     border-end-end-radius: 10px;
     width: 100px;
@@ -26,7 +28,8 @@ body{
     transition: 0.5s;
 }
 #verde{
-    background-color: rgba(20, 186, 20);
+    background-color: #14ba14;
+    opacity: 0.5;
     border-start-end-radius: 100%;
     border-end-start-radius: 10px;
     width: 100px;
@@ -37,7 +40,8 @@ body{
     transition: 0.5s;
 }
 #amarelo{
-    background-color: rgba(200, 200, 20);
+    background-color: #919107;
+    opacity: 0.5;
     border-end-start-radius: 100%;
     border-start-end-radius: 10px;
     width: 100px;
@@ -49,6 +53,7 @@ body{
 }
 #azul{
     background-color: #0a0ab9;
+    opacity: 0.5;
     border-end-end-radius: 100%;
     border-start-start-radius: 10px;
     width: 100px;

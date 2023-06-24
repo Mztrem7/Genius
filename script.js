@@ -51,45 +51,54 @@ function jogar() {
     pisca()
 }
 
+
 function pisca() {
-    vetmaq.map((i) => {
-        if (i == 1) {
-            setTimeout(() => {
-                vermelho.style.backgroundColor = "red"
-            }, 350)
-            vermelho.style.filter = "brightness(200)"
-        }
-        if (i == 2) {
-            setTimeout(() => {
-                verde.style.backgroundColor = "green"
-            }, 350)
-            verde.style.filter = "brightness(200)"
-        }
-        if (i == 3) {
-            setTimeout(() => {
-                amarelo.style.backgroundColor = "yellow"
-            }, 350)
-            amarelo.style.filter = "brightness(200)"
-        }
-        if (i == 4) {
-            setTimeout(() => {
-                azul.style.backgroundColor = "blue"
-            }, 350)
-            azul.style.filter = "brightness(200)"
-        }
-    })
+    for(i=0; i <= vetmaq.length; i++){
+            if (vetmaq[i] == 1) {
+                setTimeout(() => {
+                    vermelho.style.backgroundColor = "#d01f1f"
+                    vermelho.style.opacity = "0.5"
+                    vermelho.style.transition = "0.3s ease"
+                }, 350)
+                vermelho.style.opacity = "1"
+            }
+            if (vetmaq[i] == 2) {
+                setTimeout(() => {
+                    verde.style.backgroundColor = "#14ba14"
+                    verde.style.opacity = "0.5"
+                    verde.style.transition = "0.3s ease"
+                }, 350)
+                verde.style.opacity = "1"
+            }
+            if (vetmaq[i] == 3) {
+                setTimeout(() => {
+                    amarelo.style.backgroundColor = "#919107"
+                    amarelo.style.opacity = "0.5" 
+                    amarelo.style.transition = "0.3s ease"
+                }, 350)
+                amarelo.style.opacity = "1"
+            }
+            if (vetmaq[i] == 4) {
+                setTimeout(() => {
+                    azul.style.backgroundColor = "#0a0ab9"
+                    azul.style.opacity = "0.5"
+                    azul.style.transition = "0.3s ease"
+                }, 350)
+                azul.style.opacity = "1" 
+            }
+    }
 }
 
 function verifygame2() {
     tamVet = vetmaq.length;
     let i = 0,
-        resp;
+    resp;
     while (i < tamVet) {
         if (vetjogador[i] != vetmaq[i]) {
             resp = "perdeu";
             vetmaq = [];
             setTimeout(() => {
-                document.body.style.backgroundColor = " #030351";
+                document.body.style.backgroundColor = "#131313";
                 document.body.style.transition = "0.3s ease";
             }, 250);
             document.body.style.backgroundColor = "red";
@@ -97,7 +106,7 @@ function verifygame2() {
         } else {
             resp = "acertou";
             setTimeout(() => {
-                document.body.style.backgroundColor = " #030351";
+                document.body.style.backgroundColor = "#131313";
                 document.body.style.transition = "0.3s ease";
 
             }, 250);
